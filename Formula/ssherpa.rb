@@ -5,21 +5,21 @@
 class Ssherpa < Formula
   desc "SSH connection manager with project context and 1Password integration"
   homepage "https://github.com/florianriquelme/ssherpa"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.1.0/ssherpa_0.1.0_darwin_amd64.tar.gz"
-      sha256 "13f641ef7105077242c6bbb80d22a58b23e4c38f8d67d2485c8403f3de25efa3"
+      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.2.0/ssherpa_0.2.0_darwin_amd64.tar.gz"
+      sha256 "de4c18ba425fd774e0b0ee5cc6d920cf7974e3f077783c5d902d159a86bb9f40"
 
       def install
         bin.install "ssherpa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.1.0/ssherpa_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f102dfdb402db3ec2022b26a2a2916f7949abd29ccf742ae5f783ca0955e65da"
+      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.2.0/ssherpa_0.2.0_darwin_arm64.tar.gz"
+      sha256 "edb692082aed558d64dafa3b1e243e718f8e51fbdd77d697a9a2123d592c5e07"
 
       def install
         bin.install "ssherpa"
@@ -29,15 +29,15 @@ class Ssherpa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.1.0/ssherpa_0.1.0_linux_amd64.tar.gz"
-      sha256 "2de259b383a6d88bbf0cbdb7d112da0e5cff5e1ce0ad470e9ae3134075643e4e"
+      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.2.0/ssherpa_0.2.0_linux_amd64.tar.gz"
+      sha256 "035cd53b46dedb7258d66a627d74447d1d987eb72bc7d607e11391ffb545a17d"
       def install
         bin.install "ssherpa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.1.0/ssherpa_0.1.0_linux_arm64.tar.gz"
-      sha256 "a187c44888a53919186b1ac675c42ac9bc567ddd2c43b968355382411ea4c272"
+      url "https://github.com/florianriquelme/ssherpa/releases/download/v0.2.0/ssherpa_0.2.0_linux_arm64.tar.gz"
+      sha256 "0b77b3c10c7b08667cdb39919e1cdd855cabb698dc436a56bad6652a8d013885"
       def install
         bin.install "ssherpa"
       end
